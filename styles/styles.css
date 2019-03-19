@@ -1,7 +1,7 @@
 :root {
   --primary: #3388ff;
-  --secondary: #0055CC;
-  --ternary: #38f;
+  --secondary: #1A70E8;
+  --ternary: #075cd5;
   --letter-color: #ffffff;
 }
 
@@ -23,10 +23,11 @@ html, body {
 }
 
 .login-content {
-  border: solid 2px red;
-  padding: 1rem;
+  padding: 1rem 1.8rem;
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
+  border-radius: 6px;
+  background: linear-gradient(var(--primary) 60%, var(--secondary));
 }
 
 .login__title {
@@ -34,13 +35,19 @@ html, body {
   margin-bottom: 1rem;
 }
 
+.login__subtitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .label {
   margin: 0.2rem 0;
   display: block;
+  font-size: 0.9rem;
 }
 
 .logo {
-  margin: 4rem 0;
+  margin: 3.5rem 0;
 }
 
 .input-container {
@@ -48,9 +55,11 @@ html, body {
 }
 
 .input__box {
+  box-sizing: border-box;
   width: 100%;
   border-radius: 5px;
-  padding: 0 0.5rem;
+  padding-left: 0.5rem;
+  /* padding: 0 0.5rem; */
   line-height: 2rem;
   outline: none;
   border: 1px var(--letter-color) solid;
@@ -60,6 +69,29 @@ html, body {
   font-size: 1rem;
 }
 
+.login__form {
+  /* background: linear-gradient(var(--primary), var(--secondary)); */
+  /* background: linear-gradient(#e66465, #9198e5); */
+}
+
 .login__button {
-  
+  margin-top: 1rem;
+  background-color: var(--ternary);
+  /* padding: 1rem; */
+  line-height: 2.5rem;
+  border-radius: 5px;
+  color: var(--letter-color);
+  width: 100%;
+  border: 1px var(--ternary) solid;
+  cursor: pointer;
+}
+
+.login__button--text {
+  font-size: 1.1em;
+}
+
+.login__forgot-password {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.9em;
 }
