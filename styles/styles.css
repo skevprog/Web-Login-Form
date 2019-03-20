@@ -20,6 +20,8 @@ html, body {
   background-color: var(--primary);
   height: 100vh;
   width: 50vw;
+  z-index: 1000;
+  position: relative;
 }
 
 .login-content {
@@ -59,7 +61,6 @@ html, body {
   width: 100%;
   border-radius: 5px;
   padding-left: 0.5rem;
-  /* padding: 0 0.5rem; */
   line-height: 2rem;
   outline: none;
   border: 1px var(--letter-color) solid;
@@ -70,14 +71,23 @@ html, body {
 }
 
 .login__form {
-  /* background: linear-gradient(var(--primary), var(--secondary)); */
-  /* background: linear-gradient(#e66465, #9198e5); */
+  background: linear-gradient(var(--primary), var(--secondary));
+}
+
+.image-container {
+  position: fixed;
+  background-image: url("../assets/illustration.png");
+  background-position: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 957px;
+  height: 100vh;
+  left: 28vw;
 }
 
 .login__button {
   margin-top: 1rem;
   background-color: var(--ternary);
-  /* padding: 1rem; */
   line-height: 2.5rem;
   border-radius: 5px;
   color: var(--letter-color);
